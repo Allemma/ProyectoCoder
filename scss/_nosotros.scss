@@ -1,0 +1,51 @@
+/* Nosotros */
+.contenido-nosotros {   
+    @include grid(2, $separacion);   
+
+}
+.centrar-img {
+    text-align: right;
+}
+.texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+.imagen-contacto {
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    flex: 0 0 95%;
+    color: $blanco;
+}
+
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+.seccion {
+    padding: 4em;
+
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+        margin: 2em;
+        
+    }
+    .icono {
+        text-align: center;
+    }
+        .icono {
+            flex-basis: calc(33.3% - 1rem);
+        }
+
+    .icono h3 {
+        text-transform: uppercase;
+    }
+}

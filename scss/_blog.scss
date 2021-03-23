@@ -1,0 +1,28 @@
+/* BLOG */
+.blog {
+    display: grid; 
+    grid-template-columns: 40% 60%; 
+    grid-template-rows: 50% 50%;       
+    .imagenBlog {
+        text-align: center;    
+    }
+    .texto-blog a {    
+        text-decoration: none;
+    }
+    .texto-blog h4 {
+        margin: 0;
+        line-height: 1.4;
+        color: $colorPrincipal;
+    }
+    .texto-blog h4::after {
+        content: '';
+        display: block;
+        width: 100rem;
+        height: 0.5rem;
+        background-color:  $colorPrincipal;
+        margin-top: 10px;
+    }
+    .texto-blog span {
+        color: #2a5aad;
+    }
+}

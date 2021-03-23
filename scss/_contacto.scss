@@ -1,0 +1,53 @@
+/*Contactos*/
+.contacto {
+    font-size: 1.5rem;
+    color: #4f4f4f;
+    margin: 15rem;
+    position: relative;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: column;   
+    legend {
+        font-size: 2rem;
+        color: #4f4f4f;
+    }
+    label {
+        font-weight: 700;        
+        display: block;
+        @include nuevoMixin(uppercase, 1.2em);
+    }
+    input,
+    textarea,
+    select {
+        padding: 1.5rem;
+        display: flex;
+        width: 100%;
+        background-color: #e1e1e1;
+        margin-bottom: 2rem;
+        border: none;
+        border-radius: 1rem;
+    }
+    select {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    textarea {
+        height: 150px;
+    }
+    .terminos {
+        text-align: center;       
+        @include nuevoMixin(capitalize, 1em);
+    }
+}
+.imagen-contacto {
+    background-image: url(../img/contacto-anuncio.jpg);
+    background-position: center center;
+    background-size: cover;    
+    
+    .contenido-contacto {   
+    text-align: center;        
+}
+    .contenido-contacto p {
+    font-size: 1.4em;       
+}
+}

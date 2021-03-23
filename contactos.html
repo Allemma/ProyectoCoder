@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="🥇Inmobiliaria de Rosario con 40 Años en el mercado meta de nuestra ciudad, con especializacion en terrenos para la construccion">
+    <meta name="keywords" content="Inmobiliaria, Inmobiliaria Rosario, construccion, terrenos para la construccion, Departamentos Rosario">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contactenos para mas información</title>
+</head>
+
+<body>
+    <header>
+    <div class="logo">
+        <img src="img/logo.png" width="300px" alt="logotipo de bienes raices">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark logo">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="anuncios.html">Anuncios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contactos.html">Contacto</a>
+              </li>
+             
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn boton-propiedades" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>   
+        <h1 class="centrar-texto">
+            Contactos
+        </h1>
+        <img src="img/Contacto.jpg" alt="Imagen Contacto">
+    </header>
+    <main>
+        <form class="contacto">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Tu Nombre">
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Tu Apellido">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="Tu Correo Electronico">
+
+                <label for="tel">Telefono</label>
+                <input type="tel" id="telefono" placeholder="Tu Telefono">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion Sobre La Propiedad</legend>
+
+                <label for="opciones">Compra o Vende</label>
+                <select name="opciones">
+                    <option value="Compra">Compra</option>
+                    <option value="Vende">Vende</option>
+                </select>
+
+                <label for="opciones">Propiedad</label>
+                <select name="opciones">
+                    <option value="Casas">Casas</option>
+                    <option value="Departamentos">Departamentos</option>
+                    <option value="Terrenos">Terrenos</option>
+                </select>
+            </fieldset>
+
+            <div class="terminos">Acepta términos y condiciones</div>
+            <input type="checkbox" name="acepta" id="1">
+
+
+            <button class="boton-propiedades mb-2" type="reset">Limpiar Formulario</button>
+            <button class="boton-propiedades mt-2" type="submit">Enviar</button>                
+
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <nav class="navbar navbar-expand-lg navbar-dark logo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="anuncios.html">Anuncios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer__copyright">Todos los derechos reservados 2021</p>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
