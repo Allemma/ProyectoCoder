@@ -21,7 +21,7 @@ body {
   background-color: #202c41; }
 
 .descripcion-inicio {
-  background-image: url(/img/header.jpg);
+  background-image: url(../img/header.jpg);
   background-position: center;
   background-size: cover;
   height: 60vh;
