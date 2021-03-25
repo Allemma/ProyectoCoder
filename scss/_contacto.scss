@@ -1,12 +1,19 @@
 /*Contactos*/
 .contacto {
-    font-size: 1.5rem;
-    color: #4f4f4f;
-    margin: 15rem;
-    position: relative;
-    bottom: 10rem;
-    display: flex;
-    flex-direction: column;   
+    @media (min-width: 320px) {
+        color: #4f4f4f;   
+        display: flex;
+        flex-direction: column; 
+        margin: 0;
+        @include telefono {
+            max-width: 600px;
+            margin: auto;
+            padding: 2em;
+        }
+        @include desktop {
+            max-width: 900px;
+        }
+    }
     legend {
         font-size: 2rem;
         color: #4f4f4f;
@@ -39,11 +46,18 @@
         @include nuevoMixin(capitalize, 1em);
     }
 }
+@include desktop {
+    .centrar-boton  {
+     margin: auto;
+     width: 100%;
+    }
+}
+
 .imagen-contacto {
     background-image: url(../img/contacto-anuncio.jpg);
     background-position: center center;
     background-size: cover;    
-    
+    width: 100%;
     .contenido-contacto {   
     text-align: center;        
 }
