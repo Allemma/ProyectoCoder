@@ -22,10 +22,12 @@
       }  
                       
     }
+    @include desktop{
      .main__anuncios:hover {
          transition: all 2s;
          transform: scale(1.1,1.1);    
      }
+    }
     .precio {
         color:#0e3579;
         font-weight: 700;                
@@ -124,5 +126,15 @@ a:hover {
         @include grid(2, $separacion / 2);
         padding: 5em;
     }
+}
+
+.textoLegend {
+    @include telefono {
+        font-size: 1em;
     }
+    @include tablet {
+         font-size: 1.8em;
+         font-weight: 700;
+}
+}
            
