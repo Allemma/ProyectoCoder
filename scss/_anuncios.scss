@@ -69,3 +69,60 @@ a:hover {
     margin-bottom: 0;
     text-align: right;
 }
+
+.formularioAnuncio {
+    @media (min-width: 320px) {
+        color: #4f4f4f;         
+        @include telefono {
+            max-width: 600px;
+            margin: auto;
+            padding: 2em;
+        }       
+    }    
+    label {
+        font-weight: 700;        
+        display: block;
+        @include nuevoMixin(uppercase, 0.8em);
+    }
+    input,
+    textarea {
+        padding: 0.5rem;        
+        width: 100%;
+        background-color: #e1e1e1;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 1rem;
+    }    
+    textarea {
+        height: 150px;
+    }    
+}
+@include desktop {
+    .centrar-boton  {
+     margin: auto;
+     width: 100%;
+    }
+}
+.boton-anuncios {
+    color: $blanco;
+    background-color:#0e3579;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;    
+    text-align: center;
+    border: none;
+    display: block;  
+    cursor: pointer;    
+} 
+.direccion {
+    font-size: 1.3em;
+    font-weight: 700;   
+}
+ @include desktop {
+    .verPublicacion {
+        @include grid(2, $separacion / 2);
+        padding: 5em;
+    }
+    }
+           

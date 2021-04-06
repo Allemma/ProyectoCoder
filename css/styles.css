@@ -15,7 +15,8 @@ body {
   line-height: 2; }
 
 .centrar-texto {
-  text-align: center; }
+  text-align: center;
+  padding: 1em; }
 
 .footer {
   background-color: #202c41; }
@@ -106,6 +107,61 @@ a:hover {
   color: gray;
   margin-bottom: 0;
   text-align: right; }
+
+@media (min-width: 320px) {
+  .formularioAnuncio {
+    color: #4f4f4f; } }
+  @media (min-width: 320px) and (min-width: 480px) {
+    .formularioAnuncio {
+      max-width: 600px;
+      margin: auto;
+      padding: 2em; } }
+
+.formularioAnuncio label {
+  font-weight: 700;
+  display: block;
+  font-size: 0.8em;
+  text-transform: uppercase; }
+
+.formularioAnuncio input,
+.formularioAnuncio textarea {
+  padding: 0.5rem;
+  width: 100%;
+  background-color: #e1e1e1;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 1rem; }
+
+.formularioAnuncio textarea {
+  height: 150px; }
+
+@media (min-width: 1200px) {
+  .centrar-boton {
+    margin: auto;
+    width: 100%; } }
+
+.boton-anuncios {
+  color: #ffffff;
+  background-color: #0e3579;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  border: none;
+  display: block;
+  cursor: pointer; }
+
+.direccion {
+  font-size: 1.3em;
+  font-weight: 700; }
+
+@media (min-width: 1200px) {
+  .verPublicacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    padding: 5em; } }
 
 /* Nosotros */
 @media (max-width: 640px) {
@@ -238,3 +294,42 @@ a:hover {
 
 .blog .texto-blog span {
   color: #2a5aad; }
+
+.social-bar {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.icon {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: flex;
+  transition: all .5s; }
+
+.icon-facebook {
+  background: #314a888a; }
+
+.icon-twitter {
+  background: #32a7d196; }
+
+.icon-whatsapp {
+  background: #35ac3596; }
+
+.icon-instagram {
+  background: #cc47098c; }
+
+.icon:first-child {
+  border-radius: 1rem 0 0 0; }
+
+.icon:last-child {
+  border-radius: 0 0 0 1rem; }
+
+.icon:hover {
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42); }
